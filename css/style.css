@@ -1,0 +1,299 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: founders;
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: 4.5rem;
+  margin: 0;
+  color: #0153D1;
+}
+
+h2 {
+  font-family: founders;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: founders;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 38px;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-family: founders;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: #0153D1;
+}
+
+p {
+  font-family: sohne-regular;
+  font-size: 1rem;
+  line-height: 25.6px;
+  color: #232323;
+  cursor: default;
+}
+
+mark {
+  background: #ebf3ff;
+}
+
+a {
+  color: #0153D1;
+}
+
+.metalinks {
+ color: #232323;
+}
+
+a:hover {
+  color: black;
+  transition: .4s;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  list-style-type: none;
+  grid-gap: 1rem;
+  padding: 1.5rem 0 1.5rem 4rem;
+  margin: 0;
+}
+
+li {
+  font-family: sohne-regular;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #232323;
+  padding: 0px 9px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #0153D1;
+  text-decoration: underline;
+  transition: .3s;
+}
+
+.active {
+  text-decoration: underline;
+  color: #0153D1;
+}
+
+nav:visited {
+  color: #001FAA;
+}
+
+::selection {
+  background-color: #ebf3ff;
+  color: #232323;
+}
+
+span:before {
+  content: '';
+  animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'failing baker.';
+  }
+  25% {
+    content: 'ux designer.';
+  }
+  50% {
+    content: 'wearer of small hats.';
+  }
+  75% {
+    content: 'furniture maker.';
+  }
+  100% {
+    content: 'lives with his parents.';
+  }
+}
+
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: default;
+    text-decoration: underline;
+}
+
+.hover-image {
+    visibility: hidden;
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
+}
+
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+/* Change width and height to scale images */
+    width: 70vw;
+    height: 70vh;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+.item_metadata {
+  color: #919191;
+  padding: 0 0 1.5rem 0;
+  margin: 0;
+}
+
+.item_description {
+  margin: 0 0 2rem 0;
+}
+
+.gallery_image {
+  object-fit: cover;
+  height: 50%;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  border-radius: 4px;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: founders;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #232323;
+  color: #232323;
+  padding: 0.75rem 2rem;
+  text-align: center;
+}
+
+.button:hover {
+  font-size: 1rem;
+  font-family: founders;
+  border-radius: 4px;
+  background: #232323;
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button_disabled {
+  font-size: 1rem;
+  font-family: founders;
+  border-radius: 4px;
+  background: #f1f1f1;
+  color: #A0A0A0;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  border: none;
+}
+
+.about {
+  font-family: founders;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 51px;
+  margin: 0;
+}
+
+.about_text_box {
+  margin-bottom: 1.125rem;
+}
+
+.about_text {
+  font-family: sohne-regular;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.list_item {
+  padding: 0 0 12px 0;
+  margin: 0;
+}
+
+/* Random Project Pages */
+.header_image {
+  object-fit: cover;
+  height: 65%;
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.photography_item {
+  object-fit: cover;
+  /* height: 50%; */
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.caption {
+  width: 100%;
+  color: #919191;
+  font-family: founders;
+  grid-column: 2 / -2;
+  line-height: 22px;
+}
+
+.project_header_image_item {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Real Project Pages */
+img {
+  max-width: 100%;
+}
+
+.image_space {
+  padding: 0 0 4rem 0;
+}
+
+.text_content {
+  padding: 0 0 2rem 0;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+}
+/* RESPONSIVE */

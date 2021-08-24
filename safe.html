@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/grid.css" rel="stylesheet">
+      <link href="css/fonts.css" rel="stylesheet">
+
+      <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+
+    <title>safe software design system.</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body>
+      <nav class="nav-container">
+        <ul>
+          <li><a href="home.html" class="active">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+  <div class="project_header_image_item">
+    <img class="header_image" src="images/banners/safebanner.png" alt="This is the page banner, which shows a repeating seriess of components, ranging from button types (primary, switches, radio, checkboxes, etc.) to chips.">
+  </div>
+
+<div class="project_header_content">
+  <div class="project_header_item">
+    <h6>Introduction</h6>
+    <p class="about_text text_content">Safe Software created FME, a digital integration platform with the best support for spatial data. I worked on the Digital Marketing and User Experience teams.</p>
+    <p class="about_text text_content">Being part of a growing design team which spans multiple products, I've been able to hold a key role in both conceptualizing and deciding on what integral components are fundamental in the operations of our varied and connected design teams. Given the scale of this project and how much everyone trusted me to I was proud of how we managed to significantly improve collaboration between design and the other disciplines while I was there.</p>
+    <a href="https://www.figma.com/file/fxHKq7LG0kKvvhmPkYp1sy/Epic-Design-System-2.0?node-id=0%3A1" target="_blank"><button class="button" type="button">See Public Figma File</button></a>
+  </div>
+  <div class="project_header_item_metadata">
+    <div class="about_text_box">
+      <h6>Duration</h6>
+      <p class="about_text">2 months</p>
+    </div>
+    <div class="about_text_box">
+      <h6>Role</h6>
+      <p class="about_text">Design lead</p>
+    </div>
+    <div class="about_text_box">
+      <h6>Team</h6>
+      <p class="about_text">3 developers, 4 designers</p>
+    </div>
+    <div class="about_text_box">
+      <h6>Tools</h6>
+      <p class="about_text">Figma, Atlassian, Storybook.js, Abstract, Tailwind UI</p>
+    </div>
+    <div class="about_text_box">
+      <h6>Special Thanks To</h6>
+        <p class="about_text"><a class="metalinks "href="https://ca.linkedin.com/in/fahad-hasany-4824b2b5" target="_blank">Fahad Hasany</a></p>
+    </div>
+  </div>
+</div>
+
+<article class="post">
+  <h3>Problem</h3>
+    <p class="text_content">As our design teams grow and hold key roles in cross-platform products, we became increasingly aware that our disconnected structure was an issue. Given that we were building experiences off an existing UI kit, problems arose as we were frequently unable to pinpoint why or when to use a component, or why we may have had numerous unnecessary instances of it. Although it was created as a method to streamline design efforts, the kit resulted in a low return on investment with longer times to market and frustrations while also leaving developers disjointed from many conversations.</p>
+    <p class="text_content">Although initially met with skepticism, I was able to advocate the creation of a design system consiststing of documented guidelines, working code, extensive resources, and human interface guidelines to build consistent digital experiences faster. Rather than maximizing time spent in design and development, which accumulates technical and design debt, we needed documented structure to improve our practices, leading to more time spent on advancing external and internal experiences.</p>
+    <figure>
+      <img class="image_space" src="images/safe/lackingstructure.png" alt="This is an image which shows our old UI Kit, and an explanation of why we needed to transition towards a comprehensive design system.">
+    </figure>
+    <p class="caption image_space" >Working with the ambiguity and unstructured nature of our UI kit (right) led to more problems than benefits</p>
+
+  <h3>Design System Values</h3>
+    <p class="text_content">With an evolving product strategy and visual language, we determined our methods had to change too. Avoiding the pitfalls of creating a one-size-fits-all solution, we dove head first into defining a bespoke solution for our company’s needs.
+    </p>
+    <p class="text_content">Given the temporary nature of my position, I had to ensure this system was outcome-driven, emphasizing a long-term solution that is stable, dependable, and can be improved on after I’m gone. Recognizing that Liz is our digital extension of the Safe brand and acts as the foundation for every digital experience at Safe, we defined a set of values to ensure we deliver flexibility, consistency, and quality to all our end users. </p>
+    <figure class="image_space">
+      <img class="image_space" src="images/safe/values.png" alt="This is a photo of our values: Being purposeful and transparent, intuitive, inclusive, and long lasting.">
+    </figure>
+
+  <h3>An Abundance of Debt</h3>
+  <p class="text_content">Having logged every component and layout used across our site with my lead, we recreated each element in a Figma board as part of our inventory and audit process. Any skepticism towards the need of a design system was wiped when we visualized the technical debt across our product. With literally dozens of card, layout, and button styles, misued type weights and sizes, and poorly scaled elements everywhere, there was less structure than a late 1800s mining town.</p>
+  <p class="text_content">After multiple rounds of review, we compiled our fundamental components onto a final page to begin documentation for our pattern library. Working closely with our developers, we decided to ensure each component page should at least have a name, description of its parts and use in context, code chunks, and a changelog.</p>
+    <figure class="image_space">
+      <img src="images/safe/debt.png" alt="This is a photo with a small portion of our 61 different cards from our original UI Kit. This is to depict the need of a design system's structure and to better sell the idea of having one to our key stakeholders.">
+    </figure>
+
+  <h3>A Varied Audience</h3>
+    <p class="text_content">With designers scattered across our four product teams</p>
+    <figure class="image_space">
+      <img src="images/safe/debt.png" alt="Big Ass Image">
+    </figure>
+
+  <h3>Designing at Scale</h3>
+    <p class="text_content">Given the sudden transition from a long-standing UI kit to a structured design system, a major concern gathered from messaging team members was the speed of how we’d approach transforming our platforms. We recognized that although 100% change is not attainable, many 1% changes through marginal gains is much more feasible and sustainable.</p>
+    <p>Our success is ultimately measured from our outcomes and not our outputs. We’re building a comprehensive picture where we build trust with people, and we want people around for a long time. To address our team’s growth, I pulled feedback from developers and ensured each component page has a system which thoroughly documents usage guidelines, and how to make When I thought we were 4-5 people, I was 20% of the output of our team. What happens when our team grows? How can I make sure everyone still has a voice </p>
+    <figure class="image_space">
+      <img class="image_space" src="images/safe/speed.png" alt="This is a photo with two images depicting what each component page has in terms of structure, to make things consistent at scale.">
+    </figure>
+
+  <h3>Results</h3>
+    <p class="text_content">Albeit what I was looking forward to the most, designing each component had its own share of difficulties. From ensuring every layer met strict naming standards, to recognizing to what the extent I can push our visual style, it has been incredibly rewarding to use, and see others make use of our new components. Surprisingly, the work done with our design system had prompted a developer to look into a new css framework, Tailwind, which will inevitably be used to structure our pattern library on the front end.</p>
+    <figure class="image_space">
+      <img src="images/safe/results.png" alt="This is a photo which shows multiple examples pulled from the design system, ranging from our spacing system (4px), multiple components, component status, and colours.">
+    </figure>
+
+  <h3>An Ongoing Process</h3>
+    <p class="text_content">This project allowed me to practice systems thinking, regularly managing collaboration with developers, and human-centered design thinking to consider all the required features of what has become a widely used resource. I explored opportunities to experiment with unique patterns and interactions while exploring undefined use-cases that were not initially captured in my project’s brief.</p>
+    <p class="text_content">I’m proud to have delivered a comprehensive product that is living, and ever-changing, with the ability to be further adapted and localized for use across specific products in Safe’s lineup. This experience helped me become proactive in leading conversations, determining what to pull from large amounts of feedback, updating stakeholders, and selling an idea based on gathered data. It is incredibly rewarding to know that my internship project is actively used and modified by the growing design team at Safe. </p>
+</article>
+
+<footer>
+  <div class="item_main_heading">
+    <div class="item_main_heading_text">
+      <h2>I've got more than that!</h2>
+    </div>
+  </div>
+
+  <div class="item_row fade">
+    <div class="item">
+      <img class="gallery_image" src="images/banners/workestrabanner.png" alt="this is temporary alt. text">
+      <h3 class="item_header">Wörkestra</h3>
+      <p class="item_metadata">2020, 4 months</p>
+      <p class="item_description">Wörkestra was a four month directed study initated to understand the roles of interpersonal communication in the workplace, and how to regain connectedness in our disjointed post-pandemic establishments.</p>
+      <a href="workestra.html"><button class="button" type="button">Read Case Study</button></a>
+    </div>
+    <div class="item">
+      <img class="gallery_image" src="images/aware/awarehome.png" alt="This is an image showing the UI of Aware.">
+      <h3 class="item_header">Aware</h3>
+      <p class="item_metadata">2020, 1 month</p>
+      <p class="item_description">Aware was a 2 month long side project looking into supporting local victims of domestic violence while preventing future instances from ocurring.</p>
+      <a href="aware.html"><button class="button" type="button">Read Case Study</button></a>
+    </div>
+    <div class="item">
+      <img class="gallery_image" src="images/photography/9.jpg" alt="This is the banner image for photography showing a woman walking up stairs.">
+      <h3 class="item_header">Digital Photography</h3>
+      <p class="item_metadata">2020, 1 month</p>
+      <p class="item_description">Unofficially exiled by multiple local film communities, in this series you’ll find examples of digital street photography. Any mentions of Kodak or any film stocks will only bring a tear to my eye.</p>
+      <a href="photography.html"><button class="button" type="button">See Photos</button></a>
+    </div>
+  </div>
+
+  <div class="footer-block">
+    <h3 class="footer-block-item"><a href="https://www.youtube.com/watch?v=-PCauQozne0" target="_blank">Rainy Days in Shibuya</a></h3>
+  </div>
+</footer>
+  </body>
+</html>
