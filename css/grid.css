@@ -1,5 +1,5 @@
 /* HOME PAGE */
-.main_heading {
+.index_heading {
   display: grid;
   grid-template-columns: repeat(24,1fr);
   grid-gap: 1.25rem;
@@ -33,7 +33,7 @@
   /* padding might be optional */
 }
 
-.main_heading_text {
+.index_heading_text {
   grid-column: 1 / span 10;
   margin-bottom: 5rem;
 }
