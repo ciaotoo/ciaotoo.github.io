@@ -1,69 +1,20 @@
 @font-face {
-  font-family: airbnb-bold;
-  src: url("../fonts/AirbnbCereal-Bold.otf");
-  font-weight: bolder;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: airbnb-medium;
-  src: url("../fonts/AirbnbCereal-Medium.otf");
+  font-family: inter-medium;
+  src: url("../fonts/Inter-Medium.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: airbnb;
-  src: url("../fonts/AirbnbCereal-Book.otf");
+  font-family: inter;
+  src: url("../fonts/Inter-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: founders-light;
-  src: url("../fonts/FoundersGrotesk-Light.otf");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: founders;
-  src: url("../fonts/FoundersGrotesk-Regular.otf");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: founders-medium;
-  src: url("../fonts/FoundersGrotesk-Medium.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: founders-thick;
-  src: url("../fonts/FoundersGrotesk-Semibold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: sohne-light;
-  src: url("../fonts/Sohne-Leicht.otf");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: sohne-regular;
-  src: url("../fonts/Sohne-Mager.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: sohne-thick;
-  src: url("../fonts/Sohne-Halbfett.otf");
-  font-weight: bold;
+  font-family: pp-eiko;
+  src: url("../fonts/PPEiko-Thin.otf");
+  font-weight: 100;
   font-style: normal;
 }
