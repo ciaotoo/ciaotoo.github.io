@@ -81,12 +81,12 @@ ul {
   grid-template-columns: repeat(24, 1fr);
   list-style-type: none;
   padding: 0;
-  margin: 1.5rem 2rem 1.5rem 2rem;
+  margin: 1.25rem 2rem 1.5rem 2rem;
 }
 
 li {
   font-family: inter;
-  font-size: .75rem;
+  font-size: .65rem;
   float: left;
 }
 
