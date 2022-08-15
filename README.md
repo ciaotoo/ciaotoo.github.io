@@ -1,1 +1,1 @@
-# Brendan Chow, a true homie.
+# GERM FREE. PROBLEM FREE. SUCKA FREE.
