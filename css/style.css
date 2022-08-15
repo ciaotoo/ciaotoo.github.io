@@ -47,6 +47,7 @@ h5 {
   color: #3D3D3D;
   font-weight: normal;
   margin: 0;
+  white-space: nowrap;
 }
 
 p {
@@ -88,6 +89,7 @@ li {
   font-family: inter;
   font-size: .65rem;
   float: left;
+  white-space: nowrap;
 }
 
 li a {
@@ -115,12 +117,6 @@ nav:visited {
 ::selection {
   background-color: #ebf3ff;
   color: #303030;
-}
-
-.gallery_image {
-  object-fit: cover;
-  height: 50%;
-  width: 100%;
 }
 
 .hover-title {
@@ -178,8 +174,7 @@ body:not(.mobile) .hover-title:hover + .hover-image {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  margin: 0 0 1rem 0;
-  /* border-radius: 4px; */
+  margin: 0 0 .75rem 0;
 }
 
 .button {
@@ -276,6 +271,67 @@ body:not(.mobile) .hover-title:hover + .hover-image {
   margin-bottom: 2rem;
 }
 
+/* Project List Page */
+.yellow {
+  color: #EDE6B3;
+}
+
+.list_background {
+  background-color: #11120F;
+}
+
+.less_margin {
+  margin: .25rem 0 .25rem 0;
+}
+
+.list_end {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.hover-title {
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hover-image {
+  visibility: hidden;
+}
+
+body:not(.mobile) .hover-title:hover + .hover-image {
+  visibility: visible;
+  pointer-events: none;
+}
+
+.hover-image {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+/* Change width and height to scale images */
+  width: 70vw;
+  height: 70vh;
+
+  animation: fadeIn 3s;
+}
+
+.hover-image img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0;
+}
+/* Project List Page */
+
 /* Real Project Pages */
 img {
   max-width: 100%;
@@ -304,6 +360,10 @@ img {
   color: #B7B7B7;
  }
 
+ .not_as_light {
+   color: #888888;
+ }
+
  .lightest_line {
    border-bottom: 1px solid #D2D2D2;
  }
@@ -314,6 +374,11 @@ img {
 
  .extra_padding {
    padding-bottom: .25rem;
+ }
+
+ .less_padding {
+   padding: 0.25rem 0 0.25rem 0;
+   margin: 0;
  }
 
  .working_page_content_image {
@@ -331,6 +396,16 @@ img {
 
  .bottom_line {
    padding-bottom: 0.75rem;
-   border-bottom: 1px solid #D2D2D2;
+   border-bottom: 1px dotted #D2D2D2;
  }
+
+ .top_line {
+   padding-top: 0.75rem;
+   border-top: 1px dotted #D2D2D2;
+ }
+
+ @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 /* New Shit */
