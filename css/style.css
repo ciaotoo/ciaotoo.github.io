@@ -77,23 +77,22 @@ a:hover {
 }
 
 ul {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(24, 1fr);
   list-style-type: none;
+  overflow: hidden;
   padding: 0;
   margin: 1.25rem 2rem 1.5rem 2rem;
 }
 
 li {
-  font-family: inter;
-  font-size: .65rem;
   float: left;
-  white-space: nowrap;
 }
 
 li a {
   display: block;
+  font-family: inter;
+  font-size: .65rem;
+  white-space: nowrap;
+  padding: 0 1rem 0 0;
   color: #303030;
   text-decoration: none;
 }
@@ -381,6 +380,10 @@ img {
    margin: 0;
  }
 
+ .no_padding {
+   padding: 0;
+ }
+
  .working_page_content_image {
    /* height: 50%; */
  }
@@ -407,5 +410,9 @@ img {
  @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.float_right {
+  float: right;
 }
 /* New Shit */
