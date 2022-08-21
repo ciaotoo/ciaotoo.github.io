@@ -41,12 +41,8 @@
 .project_block {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
-  grid-gap: 1.25rem;
-  margin: 2rem 2rem 1.25rem 2rem;
-}
-
-.project_image_item {
-  grid-column: 1 / span 12;
+  grid-gap: 1rem 1.25rem;
+  margin: 2rem 2rem 0 2rem;
 }
 
 .project_description_box {
@@ -55,8 +51,16 @@
   margin-bottom: 1rem;
 }
 
+.project_image_item {
+  grid-column: 1 / span 12;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #D2D2D2;
+}
+
 .project_image_item_2 {
   grid-column: 13 / span 12;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #D2D2D2;
 }
 
 .project_description_box_2 {

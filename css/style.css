@@ -335,8 +335,13 @@ img {
  }
 
  .less_padding {
-   padding: 0.25rem 0 0.25rem 0;
-   margin: 0;
+   padding: 0.5rem 0 0.25rem 0;
+   /* margin: 0; */
+ }
+
+ .bold {
+   font-family: inter-medium;
+   font-weight: bold;
  }
 
  .no_padding {
@@ -365,14 +370,13 @@ img {
    border-bottom: 1px dotted #D2D2D2;
  }
 
- .top_line {
-   padding-top: 0.75rem;
-   border-top: 1px dotted #D2D2D2;
- }
-
  @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.float_left {
+  float: left;
 }
 
 .float_right {
