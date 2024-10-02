@@ -21,10 +21,10 @@ h2 {
 }
 
 h3 {
-  font-family: pp-eiko;
-  font-size: 1.5rem;
+  font-family: inter;
+  font-size: .75rem;
   font-weight: normal;
-  line-height: 42px;
+  line-height: 22px;
   margin: 0;
   padding: 0;
   color: #888888;
@@ -43,7 +43,7 @@ h4 {
 
 h5 {
   font-family: inter;
-  font-size: .75rem;
+  font-size: 11px;
   color: #3D3D3D;
   font-weight: normal;
   margin: 0;
@@ -53,8 +53,8 @@ h5 {
 p {
   font-family: inter;
   font-size: .75rem;
-  line-height: 22px;
-  color: #6C6C6C;
+  line-height: 24px;
+  color: rgba(94, 90, 82, 0.75);
   cursor: default;
 }
 
@@ -368,6 +368,13 @@ img {
  .bottom_line {
    padding-bottom: 0.75rem;
    border-bottom: 1px dotted #D2D2D2;
+ }
+
+ .dash {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-bottom: 1px dashed #D2D2D2;
  }
 
  @keyframes fadeIn {
